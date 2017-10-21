@@ -1,7 +1,7 @@
 #!/bin/bash
 read N
 # Calculate summation of N integers
-for i in $( seq 1 $N )
+for (( i=1; i<=N; i++ ))
 do
     read tmp
     sum=$(($sum+$tmp))
